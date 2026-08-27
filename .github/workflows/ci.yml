@@ -1,0 +1,36 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  evidence-python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Dry-run contested evidence
+        run: python tools/contested_evidence.py --dry-run --frames 60 --up 15 --down 10
+      - name: Pytest
+        run: |
+          pip install -r tools/requirements-dev.txt
+          pytest -q
+
+  windows-cpp:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure + build
+        run: |
+          cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+          cmake --build build --config Release
+      - name: Dry-run contested_bridge
+        run: .\build\Release\contested_bridge.exe --dry-run --frames 60 --up 15 --down 10
+      - name: Build probes present
+        run: |
+          Test-Path .\build\Release\lattice_probe.exe
+          Test-Path .\build\Release\auth_resume_probe.exe
+          if (-not (Test-Path .\fixtures\minimal_track.json)) { throw "missing fixture" }

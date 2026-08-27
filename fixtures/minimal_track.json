@@ -1,0 +1,31 @@
+{
+  "entityId": "polybolos-fixture-minimal-001",
+  "description": "Minimal Lattice track fixture (known-good PUT shape)",
+  "isLive": true,
+  "createdTime": "2026-07-30T00:00:00Z",
+  "expiryTime": "2099-01-01T00:00:00Z",
+  "aliases": { "name": "FIXTURE-MIN" },
+  "milView": {
+    "disposition": "DISPOSITION_FRIENDLY",
+    "environment": "ENVIRONMENT_AIR"
+  },
+  "location": {
+    "position": {
+      "latitudeDegrees": 32.7767,
+      "longitudeDegrees": -96.7970,
+      "altitudeHaeMeters": 1000.0
+    }
+  },
+  "ontology": {
+    "template": "TEMPLATE_TRACK",
+    "platformType": "UNKNOWN AIR VEHICLE"
+  },
+  "provenance": {
+    "dataType": "fixture",
+    "integrationName": "polybolos-lattice-cpp-contested-bridge",
+    "sourceUpdateTime": "2026-07-30T00:00:00Z"
+  },
+  "dataClassification": {
+    "default": { "level": "CLASSIFICATION_LEVELS_UNCLASSIFIED" }
+  }
+}
