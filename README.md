@@ -14,7 +14,7 @@ That is attributed scientific and portfolio dialogue.
 Command HOTL is assessed at **TRL 5** (lab / SITL / controlled demo / Lattice developer sandbox). Decision-C2 / human-on-the-loop authority lineage. 
 **Lattice**  
 Sandbox / interoperability evidence (including documented scale publish-ingest work) supports Lattice-edge integration feasibility. Not a production Lattice mesh claim. Independent of Anduril; samples are not Anduril products.
-**Inquiries:** mark.brown@polybolos.org  
+**Inquiries:** Contact@Polybolos.org  
 CAGE: 1AVY9 · UEI: RUSHH9B2UQV3 · Polybolos Institute
 
 ## What this repo does
@@ -123,4 +123,4 @@ This repository is the open foundation (MIT).
 
 Polybolos Institute also maintains a proprietary catalog of additional capabilities that are not published here. Contact us to discuss production deployment and commercial licensing.
 
-mark.brown@polybolos.org · https://www.polybolos.org
+Contact@Polybolos.org · https://www.polybolos.org
